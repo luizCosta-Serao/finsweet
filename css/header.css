@@ -1,8 +1,26 @@
 .header {
   background-color: #232536;
-  
 }
 
+/* MENU HAMBURGUER */
+.header .btn-menu {
+  background-color: transparent;
+  border: none;
+  display: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.header .btn-menu:hover {
+  scale: 1.1;
+}
+
+.header .btn-menu img {
+  width: 50px;
+  height: 50px;
+}
+
+/* MENU */
 .header .menu ul {
   display: flex;
   align-items: center;
@@ -23,4 +41,34 @@
   font-size: 18px;
   font-family: "Sen", serif;
   font-weight: 700;
+}
+
+@media (max-width: 876px) {
+  .header .btn-menu {
+    display: block;
+  }
+  
+  /* MENU MOBILE */
+  .header .menu {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 100%;
+    z-index: 10000;
+    opacity: 0;
+  }
+  
+  .header .menu.active {
+    transition: .3s;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header .menu ul {
+    background-color: #232536;
+    flex-direction: column;
+    padding: 40px 0;
+
+  }
 }

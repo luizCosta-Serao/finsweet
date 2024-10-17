@@ -17,6 +17,8 @@
       <div class="logo">
         <a href="<?php echo INCLUDE_PATH; ?>"><img src="<?php echo INCLUDE_PATH; ?>assets/logo.svg" alt="Finsweet"></a>
       </div>
+
+      <button class="btn-menu"><img src="<?php echo INCLUDE_PATH; ?>assets/menu.svg" alt="Menu"></button>
       <nav class="menu">
         <ul>
           <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
@@ -29,5 +31,8 @@
     </div>
   </header>
   <!-- FIM HEADER -->
+
+  <script src="<?php echo INCLUDE_PATH; ?>js/jquery-3.7.1.min.js"></script>
+  <script type="module" src="<?php echo INCLUDE_PATH; ?>js/script.js"></script>
 </body>
 </html>
