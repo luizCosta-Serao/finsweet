@@ -32,6 +32,17 @@
   </header>
   <!-- FIM HEADER -->
 
+  <!-- INÍCIO PÁGINA DINÂMICA -->
+  <?php
+    $url = isset($_GET['url']) ? $_GET['url'] : 'home';
+    if (file_exists('pages/'.$url.'.php')) {
+      include('pages/'.$url.'.php');
+    } else {
+      include('pages/home.php');
+    }
+  ?>
+  <!-- FIM PÁGINA DINÂMICA -->
+
   <script src="<?php echo INCLUDE_PATH; ?>js/jquery-3.7.1.min.js"></script>
   <script type="module" src="<?php echo INCLUDE_PATH; ?>js/script.js"></script>
 </body>
