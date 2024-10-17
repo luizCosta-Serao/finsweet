@@ -1,0 +1,26 @@
+.header {
+  background-color: #232536;
+  
+}
+
+.header .menu ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header .menu ul li a {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Inter", serif;
+  line-height: 28px;
+}
+
+.header .menu ul li a.subscribe {
+  background-color: #fff;
+  padding: 16px 48px;
+  color: #232536;
+  font-size: 18px;
+  font-family: "Sen", serif;
+  font-weight: 700;
+}
